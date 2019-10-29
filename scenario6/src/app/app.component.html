@@ -1,0 +1,10 @@
+<div style="text-align: center;background: salmon;">
+  <h1>
+     I am the Parent
+  </h1>
+  <app-child2 [DataFromParent]="siblingMessage"></app-child2>
+  <app-child1 (childEvent1)="siblingMessage=$event"></app-child1>
+  
+  <!-- {{siblingMessage}} -->
+  
+</div>
